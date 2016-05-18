@@ -72,7 +72,7 @@
 
                      <li>
                      <label for="email-address"> E-mail:</label>
-                     <input type="email" id="email-address" name="email-address" placeholder="Enter your e-mail">
+                     <input type="email" id="email-address" name="email-address" autofocus placeholder="Enter your e-mail">
                      </li> 
 
                      <li>
@@ -113,6 +113,33 @@
                          <input type="url" id="website" name="website" placeholder="Enter Url">
                         </li>
                      </ul>
+                  </fieldset>   
+         </form>         
+
+         <form action="/login" method="post">
+               <fieldset>
+                <legend>Personal Details</legend>
+                  <ul> 
+                        <li>
+                        <label for="passport">Passport:</label> 
+                        <input name="passport" type="text" pattern="[0-9]{7}[A-Za-z]{1}" title="Seven numbers  followed by a single upper or lower case letter."/> 
+
+                        </li>
+
+                        <li>
+                        <label for="telephone">Phone Number</label><input type="tel" id="telephone" name="telephone" placeholder="Enter your phone number">
+                        </li>
+
+                        <li>
+                         <label for="website">Website</label>           
+                         <input type="url" id="website" name="website" placeholder="Enter Url">
+                        </li>
+
+                        
+
+                        
+
+                  </ul>
                   </fieldset>   
          </form>         
     </div>
