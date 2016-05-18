@@ -62,13 +62,23 @@
    </head>
    <body>
       <div id="container">
-         <form action="/login" method="post">
-            <input type="text" name="username">
+         <fieldset>
+            <legend> Login </legend>
+               <ul>
+                  <form action="/login" method="post">
+                     <li><label for="userName">  Username:</label>    
+                     <input type="text" id="userName"    name="userName"/></li>
+                     <li><label for="email-address"> E-mail:</label>
+                     <input type="email" id="email-address" name="email-address"></li> 
+                     <li><label for="website">Website</label>           
+                     <input type="url" id="website" name="website"></li>
+            
+               
 
 
-
-
-         </form>
+                  </form>
+               </ul>   
+         </fieldset>    
     </div>
    </body>
 
