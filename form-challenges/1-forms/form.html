@@ -66,24 +66,55 @@
             <legend> Login </legend>
                <ul>
                   <form action="/login" method="post">
-                     <li><label for="userName">  Username:</label>    
-                     <input type="text" id="userName"    name="userName"/></li>
+                     <li>
+                     <label for="userName">  Username:</label>    
+                     <input type="text" id="userName"    name="userName" placeholder="Enter your name" /></li>
 
-                     <li><label for="email-address"> E-mail:</label>
-                     <input type="email" id="email-address" name="email-address"></li> 
+                     <li>
+                     <label for="email-address"> E-mail:</label>
+                     <input type="email" id="email-address" name="email-address" placeholder="Enter your e-mail">
+                     </li> 
 
-                     <li><label for="website">Website</label>           
-                     <input type="url" id="website" name="website"></li>
+                     <li>
+                     <label for="website">Website</label>           
+                     <input type="url" id="website" name="website" placeholder="Enter url">
+                     </li>
 
-                     <li><label for="passWord">Password</label><input type="password" id="passWord" name="passWord"></li>
-                     <li><input type="submit" name="submit" value="Submit"></li>
+                     <li>
+                     <label for="passWord">Password</label><input type="password" id="passWord" name="passWord" placeholder="Enter password">
+                     </li>
+
+                     <li>
+                     <input type="submit" name="submit" value="Submit">
+                     </li>
             
                
 
 
                   </form>
                </ul>   
-         </fieldset>    
+         </fieldset> 
+         
+         <form action="/login" method="post">
+               <fieldset>
+                <legend>Personal Details</legend>
+                  <ul>         
+                        <li>
+                        <label for="email-address"> E-mail:</label>
+                        <input type="email" id="email-address" name="email-address" placeholder="Enter your e-mail here"/ required>
+                        </li> 
+
+                        <li>
+                        <label for="telephone">Phone Number</label><input type="tel" id="telephone" name="telephone" placeholder="Enter your phone number">
+                        </li>
+
+                        <li>
+                         <label for="website">Website</label>           
+                         <input type="url" id="website" name="website" placeholder="Enter Url">
+                        </li>
+                     </ul>
+                  </fieldset>   
+         </form>         
     </div>
    </body>
 
